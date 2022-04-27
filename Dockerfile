@@ -17,5 +17,5 @@ FROM --platform=linux/amd64 ubuntu:20.04
 
 COPY --from=builder /lib/x86_64-linux-gnu/libpng16.so.16 /lib/x86_64-linux-gnu/libpng16.so.16
 COPY --from=builder /flif/src/flif /flif
-RUN mkdir /corpus
-COPY --from=builder /flif/testFiles/sig05-014.png /corpus
+RUN mkdir /tests
+COPY --from=builder /flif/testFiles/sig05-014.png /tests
