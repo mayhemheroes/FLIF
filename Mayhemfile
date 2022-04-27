@@ -6,4 +6,4 @@ target: flif
 
 # List of commands used to test the target
 cmds:
-    - cmd: /flif -d @@ /tmp/out
+    - cmd: /flif -e @@ - > /dev/null
